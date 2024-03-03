@@ -1,0 +1,20 @@
+[package]
+name = "serverless_rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+lambda_http = "0.10.0"
+lambda_runtime = "0.10.0"
+serde = { version = "1.0.136", features = ["derive"] } # Serialization framework
+serde_json = "1.0.78"
+aws-config = "0.51.0"
+aws-sdk-dynamodb = "0.21.0"
+rand = "0.8.4"
+simple_logger = "4.3.3"
+log = "0.4.14" # Logging facade
+tracing = { version = "0.1", features = ["log"] }
+tracing-subscriber = { version = "0.3", default-features = false, features = ["env-filter", "fmt"] }
+tokio = { version = "1", features = ["macros"] }

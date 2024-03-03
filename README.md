@@ -12,7 +12,7 @@ This initiative focuses on constructing a serverless feature using AWS Lambda, c
 
 ### Initialization of Rust Project
 
-* Kickstart your project by generating a new Cargo Lambda project with `cargo lambda new <YOUR-PROJECT-NAME>`.
+* Kickstart your project by generating a new Cargo Lambda project with `cargo lambda new <YOUR-PROJECT-NAME>` (`serverless-rust` in my case).
 * Tailor the `Cargo.toml` and `src/main.rs` to fit your project's design and needs.
 * In your project folder, locally test its functionality by executing `cargo lambda watch`.
 
